@@ -5,6 +5,20 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Senpai'),
+      ),
+      body: Center(
+        child: Text(
+          'Hello World',
+          style: Theme.of(context).textTheme.headlineLarge,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.phone),
+      ),
+    );
   }
 }
